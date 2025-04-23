@@ -1,0 +1,227 @@
+/* 
+  Mengatur gaya umum untuk halaman web.
+  - Menghapus margin default pada body untuk menghindari ruang kosong di tepi halaman.
+  - Menggunakan font 'Montserrat' sebagai font utama.
+  - Menetapkan gambar latar belakang tetap dan tidak mengulang dengan ukuran menyesuaikan (cover) untuk latar belakang.
+  - Mengatur warna teks di seluruh halaman menjadi putih.
+*/
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: url('japanese_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* 
+  Mengatur gaya untuk banner bagian atas halaman.
+  - Memberikan latar belakang putih transparan dengan sedikit transparansi.
+  - Menambahkan padding untuk memberi ruang di sekitar teks.
+  - Menentukan ukuran font dan jenis font.
+  - Mengatur warna teks menjadi merah tua.
+  - Menambahkan garis bawah untuk membedakan banner dari konten lainnya.
+  - Menambahkan animasi fade-in untuk memberi efek peralihan saat elemen muncul.
+*/
+.top-banner {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #b22222;
+  border-bottom: 3px solid #f4a261;
+  animation: fadeIn 2s ease;
+}
+
+/* 
+  Animasi untuk fade-in yang membuat elemen tampil perlahan.
+*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 
+  Mengatur gaya untuk elemen dengan kelas 'welcome' dan strong di dalamnya.
+  - Mengubah warna teks menjadi hitam dan memperbesar ukuran font untuk elemen yang dipertegas.
+*/
+.welcome strong {
+  color: #000;
+  font-size: 24px;
+}
+
+/* 
+  Mengatur gaya untuk navbar bagian atas.
+  - Memberikan latar belakang gelap dengan padding di sekitar menu.
+*/
+.navbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+/* 
+  Mengatur gaya untuk menu navigasi.
+  - Menghapus bullet point pada daftar menu dan menyelaraskan teks di tengah.
+*/
+.menu {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* 
+  Mengatur gaya untuk setiap item menu.
+  - Menampilkan item menu secara horizontal dan memberi jarak antar item.
+*/
+.menu li {
+  display: inline;
+  margin: 0 20px;
+}
+
+/* 
+  Mengatur gaya untuk tautan dalam menu.
+  - Memberikan warna putih pada teks tautan, ukuran font, dan gaya huruf tebal.
+  - Menambahkan efek hover dan kelas aktif untuk perubahan warna.
+*/
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 
+  Menambahkan efek hover dan perubahan warna saat tautan dipilih (active).
+*/
+.menu a:hover,
+.menu a.active {
+  color: #f4a261;
+}
+
+/* 
+  Mengatur gaya untuk bagian utama halaman (section menu).
+  - Memberikan padding di sekitar teks dan menyelaraskan teks ke tengah.
+*/
+.menu-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* 
+  Mengatur gaya untuk judul bagian menu.
+  - Mengatur ukuran font dan margin bawah untuk memberikan ruang antara judul dan konten.
+*/
+.menu-section h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+/* 
+  Mengatur gaya untuk grid menu.
+  - Menggunakan grid dengan kolom otomatis untuk menyesuaikan ukuran elemen.
+*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* 
+  Mengatur gaya untuk kartu menu (card).
+  - Memberikan latar belakang transparan dengan padding dan border-radius untuk bentuk melengkung.
+  - Menambahkan bayangan untuk efek kedalaman.
+*/
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+  Mengatur gaya untuk gambar di dalam kartu menu.
+  - Menetapkan ukuran gambar dan memberikan efek zoom saat hover.
+*/
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 
+  Menambahkan efek transformasi dan bayangan pada gambar saat hover.
+*/
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* 
+  Mengatur gaya untuk informasi kartu (title, harga, deskripsi).
+  - Memberikan margin dan mengatur ukuran font.
+*/
+.info {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* 
+  Mengatur gaya untuk harga di dalam kartu.
+  - Membuat harga lebih menonjol dengan ukuran font lebih besar dan warna oranye.
+*/
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f4a261;
+}
+
+/* 
+  Mengatur gaya untuk deskripsi dalam kartu.
+  - Mengatur ukuran font lebih kecil dan warna abu-abu.
+*/
+.description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* 
+  Mengatur gaya untuk bagian kutipan.
+  - Memberikan latar belakang putih dengan bayangan ringan dan garis kiri berwarna oranye.
+  - Memberikan ruang yang cukup di sekitar kutipan dan menambahkan efek border-radius.
+*/
+.quote {
+  background-color: #fffefc;
+  padding: 30px;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin: 40px auto;
+  max-width: 700px;
+  border-left: 5px solid #f4a261;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* 
+  Mengatur gaya untuk footer halaman.
+  - Memberikan latar belakang gelap dan teks putih di bagian bawah halaman.
+  - Menambahkan padding dan menentukan ukuran font yang lebih kecil.
+*/
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+}

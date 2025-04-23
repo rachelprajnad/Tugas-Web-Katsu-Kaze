@@ -8,9 +8,8 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: url('japanese_background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+  background-color: #fff8ed;
+  color: #333;
 }
 
 /* 
@@ -108,6 +107,7 @@ body {
 .menu-section {
   padding: 50px 20px;
   text-align: center;
+  background-color: #fff8ed;
 }
 
 /* 
@@ -136,10 +136,10 @@ body {
   - Menambahkan bayangan untuk efek kedalaman.
 */
 .card {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fffef9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* 
@@ -173,16 +173,17 @@ body {
 h3 {
   font-size: 18px;
   margin: 10px 0;
+  color: #b22222;
 }
 
 /* 
   Mengatur gaya untuk harga di dalam kartu.
-  - Membuat harga lebih menonjol dengan ukuran font lebih besar dan warna oranye.
+  - Membuat harga tidak lagi mencolok: tidak ditebalkan, warna abu-abu seperti deskripsi, dan ukuran font normal.
 */
 .price {
-  font-size: 16px;
-  font-weight: 700;
-  color: #f4a261;
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
 }
 
 /* 
